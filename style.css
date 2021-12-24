@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'b';
+    src: url(font/gotham-book.otf);
+}
+
+@font-face {
+    font-family: 'tesla';
+    src: url(font/TESLA.ttf);
+}
+body {
+    margin: 0;    
+}
+
+body.active{
+    filter: blur(3);
+}
+
+
+
+/* navabar */
+.navbar {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'b';
+    position: fixed;
+}
+
+.navbar .logo {
+   width: 200px;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   margin-left: 50px;
+}
+
+.navbar .logo p{
+    font-family: 'tesla';
+    font-size: 1.2em;
+    letter-spacing: 8px;
+}
+
+.navbar .model {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #191b20;
+    margin-right: 35px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.navbar .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+/* reste */
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+
+.page1 {
+    background: black;
+    background-image: url(images/model3.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.page1 img {
+    height: 100vh;
+    width: 100vw;
+}
+
+.page1 .title {
+    width: 100vw;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page1 .title h1 {
+    font-weight: bolder;
+    margin-top: 85px;
+    font-size: 40px;
+    color: #191b20;
+    font-family: 'b';
+    margin-bottom: 25px;
+    color: #393c41;
+}
+
+.page1 .title a {
+    font-family: 'b';
+    color: #191b20;
+    font-size: 14px;
+}
+
+.disponible {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disponible .black {
+    width: 260px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: 'b';
+    border: none;
+    background-color: #393c40;
+    color: #e1e2e2;
+    font-weight:bolder;
+}
+
+.disponible p {
+    margin: 0;
+}
+
+
+.disponible .black:hover {
+    cursor: pointer;
+}
+
+.disponible .white {
+    font-weight:bolder;
+    width: 260px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: 'b';
+    border: none;
+    background-color:#e1e2e2;
+    color: #393c40;
+    margin-left: 30px;
+}
+
+.disponible .white:hover {
+    cursor: pointer;
+}
+
+
+.page2{
+    background: black;
+    background-image: url(images/modely.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.page2 .title {
+    width: 100vw;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.page2 .title h1 {
+    font-weight: bolder;
+    margin-top: 85px;
+    font-size: 40px;
+    color: #191b20;
+    font-family: 'b';
+    margin-bottom: 25px;
+    color: #393c41;
+}
+
+.page3{
+    background: black;
+    background-image: url(images/models.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.page3 .title {
+    width: 100vw;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.page3 .title h1 {
+    font-weight: bolder;
+    margin-top: 85px;
+    font-size: 40px;
+    color: #191b20;
+    font-family: 'b';
+    margin-bottom: 25px;
+    color: #393c41;
+}
+
+.page4{
+    background: black;
+    background-image: url(images/modelx.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.page4 .title {
+    width: 100vw;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.page4 .title h1 {
+    font-weight: bolder;
+    margin-top: 85px;
+    font-size: 40px;
+    color: #191b20;
+    font-family: 'b';
+    margin-bottom: 25px;
+    color: #393c41;
+}
+
+
+.page5 {
+    background: black;
+    background-image: url(images/maison.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.page5 .title {
+    width: 100vw;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.page5 .title h1 {
+    font-weight: bolder;
+    margin-top: 85px;
+    font-size: 40px;
+    color: #191b20;
+    font-family: 'b';
+    margin-bottom: 25px;
+    color: #393c41;
+}
+
+.page5 .title p {
+    margin-top: 5px;
+    font-family: 'b';
+    font-size: 17px;
+    color: #393c41;
+}
+
+.page6 {
+    background: #eaeaea;
+    background-image: url(images/acc.jpg);
+    background-size: 900px;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.page6 .title {
+    width: 100vw;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page6 .title h1 {
+    font-weight: bolder;
+    margin-top: 140px;
+    font-size: 40px;
+    color: #191b20;
+    font-family: 'b';
+    margin-bottom: 25px;
+    color: #393c41;
+}
+
+.page6 .disponible .black {
+    margin-top: 40px;
+}
+
+footer {
+    z-index: 1;
+    width: 100vw;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'b';
+    font-size: 12px;
+    color: #393c41;
+}
+
+.page6 footer a {
+    margin-bottom: 0;
+    margin-right: 15px;
+}
+
+#menusecret {
+    filter: none;
+    width: 311px;
+    height: 100vh;
+    background: blue;
+    top: 0;
+    right: 0;
+    position: fixed;
+    transform:translateX(311px);
+    transition:ease-in-out 0.3s;
+    z-index: 3;
+}
+
+#menusecret.active {
+    transform: translateX(0);
+}
+
+#menusecret.unactive {
+    transform: translateX(331px);
+}
